@@ -24,7 +24,9 @@ def main():
             print("Please schedule a consultation.")
 
 def addNumbers(a,b):
-    sum = a + b
-    return(sum)
+    if str(a).isnumeric() and str(b).isnumeric():
+        return a + b
+    else:
+        return
 
 main()
